@@ -643,6 +643,10 @@ body {
     background: #17351D;
 }
 
+.main-page {
+    background: #012E07;
+}
+
 .content {
     flex: 1 0 auto;
     overflow: hidden;
@@ -2571,6 +2575,7 @@ table td:nth-child(3) {
 
 .main-block {
     position: relative;
+    min-height: 390px;
 }
 
 .kv {
@@ -2580,35 +2585,37 @@ table td:nth-child(3) {
     right: 0;
     margin: auto;
     width: 100%;
-    height: 535px;
-    background: url(../img/kv.jpg) center 0 no-repeat;
-    background-size: cover;
+    height: 603px;
+    background: url(../img/bg.jpg) center 0 no-repeat;
+    background-size: 1440px;
 }
 
-.main-circle {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 371px;
-    background: url(../img/main-circle.png) center 0 no-repeat;
-    background-size: cover;
+.main-block .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .kv-info {
     position: relative;
-    max-width: 560px;
-    min-height: 420px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 420px;
+    min-height: 230px;
+    padding-top: 45px;
 }
 
 .kv-date {
     position: relative;
-    margin: 0 0 20px;
+    display: inline-block;
+    margin: 0 0 15px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
     background: linear-gradient(90deg, #FADC7F 7.45%, #D6B24F 27.49%, #C09932 51.49%, #CFAC46 71.68%, #FADC7F 92.01%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2616,10 +2623,9 @@ table td:nth-child(3) {
 
 .kv-title1 {
     position: relative;
-    margin-bottom: 10px;
     font-weight: 900;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 40px;
+    line-height: 1.25;
     text-transform: uppercase;
     background: linear-gradient(90deg, #FADC7F 7.45%, #D6B24F 27.49%, #C09932 51.49%, #CFAC46 71.68%, #FADC7F 92.01%);
     -webkit-background-clip: text;
@@ -2628,50 +2634,130 @@ table td:nth-child(3) {
 
 .kv-title2 {
     position: relative;
-    margin-bottom: 15px;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .kv-title3 {
     position: relative;
-    margin-bottom: 25px;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 1;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
     background: linear-gradient(90deg, #FADC7F 7.45%, #D6B24F 27.49%, #C09932 51.49%, #CFAC46 71.68%, #FADC7F 92.01%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.kv-text {
-    position: relative;
+.kv-prizes {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+.kv-prize {
+    display: flex;
+}
+
+.kv-prize:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.kv-prize-img {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    width: 42px;
+    margin-right: 20px;
+}
+
+.kv-prize-title {
+    display: inline-block;
     font-weight: 900;
-    font-size: 18px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1;
     text-transform: uppercase;
-    color: #FFFFFF;
+    background: linear-gradient(90deg, #FADC7F 7.45%, #D6B24F 27.49%, #C09932 51.49%, #CFAC46 71.68%, #FADC7F 92.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.kv-text img {
-    margin-left: 20px;
+.kv-prize-text {
+    font-size: 21px;
+    line-height: 1.1;
+    color: #fff;
 }
 
-.scroll-down::before {
+.steps-block {
+    position: relative;
+    min-height: 300px; 
+}
+
+.steps-block::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    top: -160px;
+    left: -1000px;
+    right: -1000px;
     margin: auto;
-    width: 11px;
-    height: 29px;
-    background: url(../img/scroll-down.svg) center no-repeat;
+    width: 100%;
+    height: 526px;
+    background: url(../img/steps-bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.yellow-snow-left {
+    position: absolute;
+    top: -310px;
+    left: 0;
+    width: 574px;
+    height: 377px;
+    background: url(../img/steps-yellow-snow-left.svg) center no-repeat;
+    background-size: contain;
+}
+
+.yellow-snow-right {
+    position: absolute;
+    top: -320px;
+    right: 0;
+    width: 562px;
+    height: 377px;
+    background: url(../img/steps-yellow-snow-right.svg) center no-repeat;
+    background-size: contain;
+}
+
+.green-snow-left {
+    position: absolute;
+    top: 215px;
+    left: 0;
+    width: 376px;
+    height: 216px;
+    background: url(../img/steps-green-snow-left.svg) center no-repeat;
+    background-size: contain;
+}
+
+.green-snow-right {
+    position: absolute;
+    top: 215px;
+    right: 0;
+    width: 376px;
+    height: 216px;
+    background: url(../img/steps-green-snow-right.svg) center no-repeat;
+    background-size: contain;
+}
+
+.cup {
+    position: absolute;
+    top: -415px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 258px;
+    height: 436px;
+    background: url(../img/cup.png) center no-repeat;
     background-size: contain;
 }
 
@@ -2679,27 +2765,15 @@ table td:nth-child(3) {
     position: relative;
     display: flex;
     justify-content: space-between;
-    max-width: 980px;
     width: 100%;
-    margin: 0 auto 100px;
-}
-
-.steps-decor {
-    position: absolute;
-    top: -250px;
-    left: -1000px;
-    right: -1000px;
-    margin: auto;
-    width: 1712px;
-    height: 768px;
-    background: url(../img/steps-decor.png) center no-repeat;
-    background-size: cover;
-    z-index: 0;
+    margin: 0 auto;
 }
 
 .step {
     position: relative;
-    max-width: 250px;
+    display: flex;
+    align-items: center;
+    max-width: 290px;
     width: 100%;
 }
 
@@ -2708,35 +2782,51 @@ table td:nth-child(3) {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 30px;
+    justify-content: flex-end;
+    width: 140px;
+    height: 120px;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.step-img img {
+    height: 120px;
+}
+
+.step-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .step-title {
     font-weight: 900;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #FADC7F 7.45%, #D6B24F 27.49%, #C09932 51.49%, #CFAC46 71.68%, #FADC7F 92.01%);
+    background: linear-gradient(90deg, #01470C -6.52%, #016113 52.31%, #01470C 124.17%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .step-text {
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
-    color: #fff;
+    color: #17351D;
 }
 
-.step-text + .btn-wrapper {
+.steps + .btn-wrapper {
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     z-index: 2;
+}
+
+.steps + .btn-wrapper .btn {
+    font-size: 16px;
+    height: 50px;
 }
 
 .main-prize-block {
@@ -2756,10 +2846,9 @@ table td:nth-child(3) {
 }
 
 .main-prizes {
+    max-width: 800px;
     margin-bottom: 100px;
 }
-
-
 
 .prize-img {
     position: relative;
@@ -2906,32 +2995,24 @@ table td:nth-child(3) {
 }
 
 @media (max-width: 1366px) {
-    .kv {
-        top: -40px;
-        height: 440px;
+    .yellow-snow-left {
+        left: -100px;
     }
 
-    .main-circle {
-        top: 105px;
+    .yellow-snow-right {
+        right: -100px;
     }
 
-    .kv-info {
-        min-height: 390px;
+    .green-snow-left {
+        left: -40px;
+    }
+
+    .green-snow-right {
+        right: -40px;
     }
 }
 
 @media (max-width: 1280px) {
-    .collage__items img[data-id] {
-        transform: scale(.9);
-    }
-
-    .lk-test-block .cup-decor {
-        top: -340px;
-        left: -850px;
-        width: 250px;
-        height: 387px;
-    }
-
     .menu-links {
         max-width: 550px;
     }
@@ -3506,65 +3587,82 @@ table td:nth-child(3) {
         margin: 6px 5px;
     }
 
+    .main-block {
+        min-height: 425px;
+    }
+
+    .main-block .container {
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+    }
+
     .kv {
         top: -40px;
         left: -500px;
         right: -500px;
         width: 100%;
-        height: 500px;
-        background: url(../img/kv-mob.jpg) center no-repeat;
+        height: 480px;
+        background: url(../img/bg-mob.jpg) center no-repeat;
         background-size: cover;
     }
 
-    .main-circle {
-        top: 360px;
-        height: 119px;
-        background: url(../img/main-circle-mob.png) center 0 no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .kv-info {
-        min-height: 450px;
-        padding-top: 20px;
-    }
-
     .kv-date {
-        margin: 0 auto 15px;
+        font-weight: bold;
+        font-size: 11px;
+        margin: 0 auto 10px;
     }
 
     .kv-title1 {
-        font-size: 38px;
-        line-height: 50px;
-        margin-bottom: 0;
+        font-size: 30px;
     }
 
     .kv-title2 {
-        font-size: 24px;
-        margin-bottom: 0;
+        font-size: 21px;
     }
 
     .kv-title3 {
-        font-size: 38px;
-        line-height: 50px;
+        font-size: 21px;
         margin-bottom: 15px;
     }
 
-    .kv-text {
-        font-size: 14px;
+    .steps-block {
+        min-height: 570px;
+        padding-top: 70px;
     }
 
-    .kv-text img {
-        width: 102px;
-        margin-left: 15px;
+    .steps-block::before {
+        top: -65px;
+        height: 657px;
+        background: url(../img/steps-bg-mob.png) center no-repeat;
+        background-size: cover;
     }
 
-    .steps-decor {
+    .yellow-snow-left {
         top: -70px;
-        left: -500px;
-        right: -500px;
+        left: 0;
+        width: 279px;
+        height: 125px;
+        background: url(../img/steps-yellow-snow-left-mob.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .yellow-snow-right {
+        top: -90px;
+        right: 0;
+        width: 277px;
+        height: 125px;
+        background: url(../img/steps-yellow-snow-right-mob.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .cup {
+        top: -440px;
+        left: -100px;
+        right: -100px;
         width: 375px;
-        height: 822px;
-        background: url(../img/steps-decor-mob.png) center no-repeat;
+        height: 510px;
+        background: url(../img/cup-mob.png) center no-repeat;
         background-size: contain;
     }
 
@@ -3574,11 +3672,22 @@ table td:nth-child(3) {
         -ms-align-items: center;
         align-items: center;
         justify-content: center;
-        margin: 40px auto 80px;
+    }
+
+    .step {
+        align-items: center;
     }
 
     .step:not(:last-child) {
-        margin-bottom: 60px;
+        margin-bottom: 25px;
+    }
+
+    .step .btn-wrapper {
+        margin-top: 10px;
+    }
+
+    .step .btn {
+        padding: 14px 15px 13px;
     }
 
     .prizes-title {
