@@ -1419,12 +1419,13 @@ span.error {
     position: relative;
     font-weight: 900;
     font-size: 42px;
-    line-height: 50px;
+    line-height: 55px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .page-title span {
+    display: inline-block;
     /*filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));*/
     background: linear-gradient(90deg, #FADC7F 7.45%, #D6B24F 27.49%, #C09932 51.49%, #CFAC46 71.68%, #FADC7F 92.01%);
     -webkit-background-clip: text;
@@ -1902,7 +1903,7 @@ table td:nth-child(3) {
 
 .lk-table-title-wrapper .btn {
     height: 40px;
-    padding: 12px 30px;
+    padding: 12px 30px 11px;
     font-size: 16px;
 }
 
@@ -2434,7 +2435,6 @@ table td:nth-child(3) {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .products-list {
@@ -2684,334 +2684,332 @@ table td:nth-child(3) {
     animation: snow7 8s infinite linear;
 }
 
-@media (min-width: 1000px) {
-    @keyframes snow1 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        12% {
-            opacity: 0.5;
-            transform: scale(1.5);
-        }
-
-        25% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        38% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        50% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        62% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        75% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        88% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+@keyframes snow1 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
     }
 
-    @keyframes snow2 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        12% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        25% {
-            opacity: 0.5;
-            transform: scale(1.5) rotate(30deg);
-        }
-
-        38% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        50% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        62% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        75% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        88% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    12% {
+        opacity: 0.5;
+        transform: scale(1.5);
     }
 
-    @keyframes snow3 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        12% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        25% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        38% {
-            opacity: 0.5;
-            transform: scale(1.5) rotate(-30deg);
-        }
-
-        50% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        62% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        75% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        88% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    25% {
+        opacity: 0.2;
+        transform: scale(1);
     }
 
-    @keyframes snow4 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        12% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        25% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        38% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        50% {
-            opacity: 0.5;
-            transform: scale(1.5);
-        }
-
-        62% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        75% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        88% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    38% {
+        opacity: 0.2;
+        transform: scale(1);
     }
 
-    @keyframes snow5 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        12% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        25% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        38% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        50% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        62% {
-            opacity: 0.5;
-            transform: scale(1.5) rotate(30deg);
-        }
-
-        75% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        88% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    50% {
+        opacity: 0.2;
+        transform: scale(1);
     }
 
-    @keyframes snow6 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        12% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        25% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        38% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        50% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        62% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        75% {
-            opacity: 0.5;
-            transform: scale(1.5) rotate(-30deg);
-        }
-
-        88% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    62% {
+        opacity: 0.2;
+        transform: scale(1);
     }
 
-    @keyframes snow7 {
-        0% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    75% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
 
-        12% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    88% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
 
-        25% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
 
-        38% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+@keyframes snow2 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
 
-        50% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    12% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
 
-        62% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    25% {
+        opacity: 0.5;
+        transform: scale(1.5) rotate(30deg);
+    }
 
-        75% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    38% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
 
-        88% {
-            opacity: 0.5;
-            transform: scale(1) rotate(-30deg);
-        }
+    50% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
 
-        100% {
-            opacity: 0.2;
-            transform: scale(1);
-        }
+    62% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    88% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes snow3 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    12% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    38% {
+        opacity: 0.5;
+        transform: scale(1.5) rotate(-30deg);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    62% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    88% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes snow4 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    12% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    38% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+
+    62% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    88% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes snow5 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    12% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    38% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    62% {
+        opacity: 0.5;
+        transform: scale(1.5) rotate(30deg);
+    }
+
+    75% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    88% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes snow6 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    12% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    38% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    62% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.5;
+        transform: scale(1.5) rotate(-30deg);
+    }
+
+    88% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes snow7 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    12% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    38% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    62% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    88% {
+        opacity: 0.5;
+        transform: scale(1) rotate(-30deg);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
     }
 }
 
@@ -3131,7 +3129,7 @@ table td:nth-child(3) {
     width: 100%;
     height: 526px;
     background: url(../img/steps-bg.png) center no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .yellow-snow-left {
@@ -3226,7 +3224,7 @@ table td:nth-child(3) {
 .step-title {
     font-weight: 900;
     font-size: 20px;
-    line-height: 1;
+    line-height: 22px;
     text-align: center;
     text-transform: uppercase;
     background: linear-gradient(90deg, #01470C -6.52%, #016113 52.31%, #01470C 124.17%);
@@ -3267,7 +3265,7 @@ table td:nth-child(3) {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 100px auto 0;
+    margin: 80px auto 0;
 }
 
 .main-prizes {
@@ -3305,6 +3303,7 @@ table td:nth-child(3) {
 }
 
 .prize-title {
+    position: relative;
     font-weight: 900;
     font-size: 24px;
     line-height: 1;
@@ -3314,14 +3313,17 @@ table td:nth-child(3) {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
+    z-index: 1;
 }
 
 .prize-text {
+    position: relative;
     font-weight: bold;
     font-size: 21px;
     line-height: 1.2;
     text-align: center;
     color: #FFFFFF;
+    z-index: 1;
 }
 
 .error-decor {
@@ -3650,7 +3652,7 @@ table td:nth-child(3) {
     .page-title2 {
         font-weight: 900;
         font-size: 30px;
-        line-height: 1.2;
+        line-height: 1.3;
     }
 
     .faq-container {
@@ -4051,6 +4053,43 @@ table td:nth-child(3) {
         margin-bottom: 15px;
     }
 
+    .snow-animation {
+        left: -300px;
+        right: -300px;
+        width: 375px;
+        height: 360px;
+    }
+
+    .snow1 {
+        left: 48px;
+    }
+
+    .snow2 {
+        top: 86px;
+    }
+
+    .snow3 {
+        top: 10px;
+    }
+
+    .snow4 {
+        top: 56px;
+        right: 100px;
+    }
+
+    .snow5 {
+        right: 33px;
+    }
+
+    .snow6 {
+        top: 97px;
+    }
+
+    .snow7 {
+        top: 183px;
+        left: 10px;
+    }
+
     .steps-block {
         min-height: 570px;
         padding-top: 70px;
@@ -4060,7 +4099,7 @@ table td:nth-child(3) {
         top: -65px;
         height: 657px;
         background: url(../img/steps-bg-mob.png) center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 
     .yellow-snow-left {
@@ -4083,9 +4122,9 @@ table td:nth-child(3) {
 
     .cup {
         top: -440px;
-        left: -100px;
-        right: -100px;
-        width: 375px;
+        left: -114px;
+        right: -105px;
+        width: 395px;
         height: 510px;
         background: url(../img/cup-mob.png) center no-repeat;
         background-size: contain;
