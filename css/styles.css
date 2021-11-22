@@ -1547,6 +1547,10 @@ span.error {
     position: absolute;
     top: -64px;
     right: 0;
+}
+
+.logout-link a {
+    position: relative;
     padding-left: 20px;
     font-weight: 500;
     font-size: 14px;
@@ -1556,7 +1560,7 @@ span.error {
     -webkit-text-fill-color: transparent;
 }
 
-.logout-link::before {
+.logout-link a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -2112,8 +2116,8 @@ table td:nth-child(3) {
     left: 0;
     right: 0;
     margin: auto;
-    width: 41px;
-    height: 50px;
+    width: 119px;
+    height: 71px;
     background: url(../img/draw-icon.svg) center no-repeat;
     background-size: contain;
 }
